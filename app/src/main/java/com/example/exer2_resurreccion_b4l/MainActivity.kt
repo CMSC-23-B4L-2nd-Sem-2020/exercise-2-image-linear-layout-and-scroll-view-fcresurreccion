@@ -37,7 +37,7 @@ class MainActivity : AppCompatActivity() {
     * Click listener for the random button
     * */
     private fun randomize() {
-        val randomInt: Int = (1..6).random()
+        val randomInt: Int = (1..10).random()
 
         /*
         * Get image of randomized character from drawable
