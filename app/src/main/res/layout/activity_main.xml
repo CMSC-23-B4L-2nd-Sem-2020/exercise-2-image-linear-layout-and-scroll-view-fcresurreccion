@@ -4,19 +4,26 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    android:background="#3C9E9A9A"
     android:orientation="vertical"
+    android:padding="8dp"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/title" />
+        android:gravity="center"
+        android:text="@string/title"
+        android:textColor="#EE000000"
+        android:textSize="24sp"
+        app:fontFamily="@font/abhaya_libre" />
 
     <ImageView
         android:id="@+id/disney_image"
         android:layout_width="match_parent"
-        android:layout_height="373dp"
+        android:layout_height="322dp"
         android:contentDescription="@string/disney_image_content_decription"
         app:srcCompat="@drawable/logo" />
 
@@ -24,6 +31,9 @@
         android:id="@+id/random_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="#7553A7FA"
+        android:shadowColor="#DC000000"
         android:text="@string/start_button" />
 
     <ScrollView
@@ -35,7 +45,12 @@
             android:id="@+id/disney_bio_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="" />
+            android:lineSpacingExtra="4sp"
+            android:padding="8dp"
+            android:text=""
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:fontFamily="@font/abhaya_libre" />
     </ScrollView>
 
 </LinearLayout>
