@@ -12,29 +12,31 @@
 
     <TextView
         android:id="@+id/title"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
         android:text="@string/title"
-        android:textColor="#EE000000"
-        android:textSize="24sp"
-        app:fontFamily="@font/abhaya_libre" />
+        app:fontFamily="@font/abhaya_libre"
+        style="@style/title_style" />
 
     <ImageView
         android:id="@+id/disney_image"
         android:layout_width="match_parent"
-        android:layout_height="322dp"
+        android:layout_height="296dp"
         android:contentDescription="@string/disney_image_content_decription"
         app:srcCompat="@drawable/logo" />
 
     <Button
         android:id="@+id/random_button"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="38dp"
         android:layout_margin="8dp"
         android:background="#7553A7FA"
         android:shadowColor="#DC000000"
         android:text="@string/start_button" />
+
+    <TextView
+        android:id="@+id/disney_name"
+        android:text="@string/instruction"
+        app:fontFamily="@font/abhaya_libre"
+        style="@style/title_style" />
 
     <ScrollView
         android:id="@+id/disney_bio_scroll"

@@ -7,6 +7,18 @@
     <!--  Button label  -->
     <string name="start_button">Start</string>
 
+    <!--  Names  -->
+    <string name="name_sora">Sora</string>
+    <string name="name_riku">Riku</string>
+    <string name="name_kairi">Kairi</string>
+    <string name="name_roxas">Roxas</string>
+    <string name="name_namine">Namine</string>
+    <string name="name_xion">Xion</string>
+    <string name="name_mickey">King Mickey</string>
+    <string name="name_donald">Donald Duck</string>
+    <string name="name_goofy">Goofy</string>
+    <string name="name_yensid">Yen Sid</string>
+
     <!--  Bio  -->
     <string name="bio_sora">
         Sora (ソラ) is the protagonist of the Kingdom Hearts video game series. He is a teenager who originates from the Destiny Islands but obtains the Keyblade, a weapon used to fight creatures known as the Heartless. In order to find the King Mickey, his allies Donald Duck and Goofy recruit him in their journey across various worlds to save them from darkness, as well as find Sora\'s friends. Throughout the games, Sora journeys throughout worlds, interacting with various Disney characters and gains experience with the Keyblade as well as his growth as its wielder.
@@ -95,5 +107,6 @@
 
     <!--  Content Description  -->
     <string name="disney_image_content_decription">image of logo or randomized character</string>
+    <string name="instruction">Tap START to find out!</string>
 
 </resources>

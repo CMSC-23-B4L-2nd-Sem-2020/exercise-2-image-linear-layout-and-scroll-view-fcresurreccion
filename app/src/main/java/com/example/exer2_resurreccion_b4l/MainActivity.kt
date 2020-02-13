@@ -12,6 +12,7 @@ class MainActivity : AppCompatActivity() {
     * Declare variables for image and text views
     * */
     private lateinit var imageView : ImageView
+    private lateinit var textViewName : TextView
     private lateinit var textViewBio : TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -28,6 +29,7 @@ class MainActivity : AppCompatActivity() {
         * Get image and text view from layout
         * */
         imageView = findViewById(R.id.disney_image)
+        textViewName = findViewById(R.id.disney_name)
         textViewBio = findViewById(R.id.disney_bio_text)
     }
 
@@ -54,6 +56,22 @@ class MainActivity : AppCompatActivity() {
         }
 
         /*
+        * Get name of randomized character from values/strings
+        * */
+        val stringResourceName = when(randomInt) {
+            1 -> R.string.name_sora
+            2 -> R.string.name_riku
+            3 -> R.string.name_kairi
+            4 -> R.string.name_roxas
+            5 -> R.string.name_namine
+            6 -> R.string.name_xion
+            7 -> R.string.name_mickey
+            8 -> R.string.name_donald
+            9 -> R.string.name_goofy
+            else -> R.string.name_yensid
+        }
+
+        /*
         * Get bio of randomized character from values/strings
         * */
         val stringResourceBio = when(randomInt) {
@@ -73,6 +91,7 @@ class MainActivity : AppCompatActivity() {
         * Update images and texts
         * */
         imageView.setImageResource(drawableResource)
+        textViewName.setText(stringResourceName)
         textViewBio.setText(stringResourceBio)
     }
 }
